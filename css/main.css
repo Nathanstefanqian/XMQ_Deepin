@@ -1,0 +1,462 @@
+.my-advant-layout {
+    height: 853px;
+    width: 100%;
+    background-color: #f7f8f9;
+}
+
+.my-advant {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 853px;
+    width: 100%;
+}
+
+.my-advant-title,
+.my-feature-title,
+.my-life-title {
+    width: 1200px;
+    height: 253px;
+}
+
+.my-advant-title h1,
+.my-feature-title h1,
+.my-life-title h1 {
+    font-size: 32px;
+    font-weight: 500;
+    text-align: left;
+    color: #000;
+    line-height: 45px;
+    margin-top: 100px;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.my-advant-title p,
+.my-feature-title p,
+.my-life-title p {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    color: #000000a6;
+    line-height: 28px;
+    margin-bottom: 60px;
+    white-space: break-spaces;
+}
+
+.my-advant-container {
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    grid-template-rows: 300px 300px;
+}
+
+.my-advant-contentdiv {
+    box-sizing: border-box;
+    max-width: 400px;
+    min-height: 300px;
+    background: #ffffff;
+    box-shadow: 0 0 0 1px #e3e6eb;
+    padding: 24px;
+    text-align: center;
+}
+
+.my-advant-contentdiv h2 {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+    color: #0a1943;
+    line-height: 25px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.my-feature-layout {
+    height: 680px;
+    width: 100%;
+    background-color: #f7f8f9;
+}
+
+.my-feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 680px;
+    width: 100%;
+}
+
+.my-feature-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f9f9fa;
+    height: 427px;
+    width: 1200px;
+}
+
+.my-feature-contentdiv {
+    width: 282px;
+    height: 427px;
+    background-color: #fff;
+}
+
+.my-feature-contentdiv-content {
+    width: 240px;
+    height: 204px;
+    padding: 20px 24px;
+}
+
+.my-feature-contentdiv-content img {
+    width: 80px;
+    height: 80px;
+}
+
+.my-feature-contentdiv h1 {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+    color: #0a1943;
+    line-height: 25px;
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 16px;
+}
+
+.my-feature-contentdiv p {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    color: #000000a6;
+    line-height: 24px;
+}
+
+.my-feature-contentdiv-bottom {
+    position: relative;
+    width: 282px;
+    height: 164px;
+}
+
+.my-feature-contentdiv-bottom>a {
+    display: block;
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    bottom: 0;
+    left: 10px;
+    right: 0;
+    width: 262px;
+    height: 164px;
+    opacity: 0;
+    background-color: #008cba;
+}
+
+.my-feature-contentdiv-bottom>a>div {
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.my-feature-contentdiv-bottom>a:hover {
+    opacity: 1;
+    transition: .5s ease;
+}
+
+.my-feature-contentdiv-bottom-centerimg {
+    display: block;
+    width: 262px;
+    height: 100%;
+    margin: auto;
+}
+
+.my-feature-contentdiv-bottom-rightimg {
+    position: absolute;
+    z-index: 3;
+    top: 30px;
+    bottom: 0;
+    left: 182px;
+    right: 0;
+    width: 80px;
+    height: 100%;
+}
+
+.my-life-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 818px;
+    width: 100%;
+    background-color: #f7f8f9;
+}
+
+.my-life-container {
+    display: grid;
+    grid-template-columns: repeat(2, 600px);
+    grid-template-rows: repeat(2, 283px);
+    column-gap: 6px;
+    row-gap: 10px;
+    width: 1200px;
+    height: 567px;
+    background-color: #f7f8f9;
+}
+
+.my-life-contentdiv {
+    box-sizing: border-box;
+    width: 588px;
+    height: 259px;
+    background-color: #ffffff;
+}
+
+.my-life-contentdiv-txt {
+    width: 524px;
+    height: 89px;
+    padding: 44.5px 32px 44.5px;
+}
+
+.my-life-contentdiv-txt h1 {
+    font-size: 24px;
+    font-weight: 500;
+    text-align: left;
+    color: #0a1943;
+    line-height: 25px;
+    margin-bottom: 16px
+}
+
+.my-life-contentdiv-txt p {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    color: #000000a6;
+    line-height: 24px;
+}
+
+.my-life-contentdiv-app {
+    display: grid;
+    width: 1200px;
+    grid-template-columns: repeat(3, 196px);
+    grid-template-rows: repeat(2, 41px);
+}
+
+.my-life-contentdiv-app div {
+
+    display: flex;
+    align-items: center;
+    padding-left: 26px;
+    border: 1px solid #e3e6eb;
+    border-left: none;
+    border-bottom: none;
+    height: 40px;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: left;
+    color: #000000a6;
+    line-height: 20px;
+}
+
+.my-life-contentdiv-app img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.my-news-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 817px;
+    width: 100%;
+    background-color: #f7f8f9;
+}
+
+.my-news {
+    width: 1200px;
+    height: 701px;
+}
+
+.my-news-title h1 {
+    display: block;
+    width: 1200px;
+    height: 45px;
+    font-size: 32px;
+    font-weight: 500;
+    color: #000;
+    line-height: 45px;
+    margin-bottom: 104px;
+    text-align: center;
+}
+
+.my-news-contentdiv {
+    display: flex;
+    align-items: center;
+    width: 1200px;
+    height: 140px;
+    padding: 16px 0 16px;
+    margin-bottom: 18px;
+    background-color: #fff;
+}
+
+.my-news-contentdiv>a {
+    display: block;
+    width: 343.57px;
+    height: 140px;
+}
+
+.my-news-contentdiv>a>img {
+    width: 319.5px;
+    height: 136px;
+}
+
+.my-news-contentdiv>div {
+    width: 856.43px;
+    height: 140px;
+}
+
+.my-news-contentdiv-title {
+    position: relative;
+    width: 856.43px;
+    height: 54.21px;
+    margin-bottom: 16px;
+}
+
+.my-news-contentdiv-title>img {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 24px;
+    height: 24px;
+    margin-right: 24px;
+}
+
+.my-news-contentdiv-title h1 {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+    color: #0a1943;
+    line-height: 25px;
+    margin-bottom: 8px;
+}
+
+.my-news-contentdiv-title div {
+    color: #5b6580;
+    width: 856.43px;
+    height: 21.21px;
+}
+
+
+.my-news-contentdiv-txt {
+    width: 760px;
+    height: 48px;
+    margin-top: 14px;
+}
+
+.my-news-contentdiv-txt p {
+    display: block;
+    font-size: 14px;
+    color: #000000a6;
+    font-weight: 400;
+    text-align: left;
+    line-height: 24px;
+}
+
+.my-user-layout {
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    width: 100%;
+    background-color: #f7f8f9;
+}
+
+.my-user {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    height: 410px;
+    width: 1200px;
+}
+
+.my-user-title {
+    font-size: 32px;
+    font-weight: 500;
+    color: #000;
+    line-height: 45px;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.my-user-subtitle {
+    display: block;
+    width: 1200px;
+    height: 28px;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    color: #000000a6;
+    line-height: 28px;
+    margin-bottom: 60px;
+}
+
+.my-user-contentdiv {
+    display: flex;
+    width: 1200px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.my-user-contentdiv>a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #e2e3e5;
+    opacity: .5;
+}
+
+.my-user-contentdiv>a>img {
+    display: block;
+    width: 24px;
+    height: 24px;
+}
+
+.my-user-contentdiv-center>div>img {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.my-user-leftarrow {
+    transform: rotateY(180deg);
+}
+
+.my-user-contentdiv>a:hover {
+    opacity: 1;
+}
+
+.my-user-contentdiv-center {
+    width: 800px;
+    height: 192px;
+    padding: 32px;
+    background-color: #ffffff;
+}
+
+.my-user-contentdiv-center>div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.my-user-contentdiv-center>div>h1 {
+    height: 40px;
+    width: 100px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 24px;
+    text-align: left;
+    color: #0a1943;
+    line-height: 40px;
+}

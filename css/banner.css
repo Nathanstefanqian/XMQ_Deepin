@@ -1,0 +1,105 @@
+.my-banner-layout {
+    width: 100%;
+    position: relative;
+}
+
+.my-banner {
+    display: block;
+    width: 100%;
+}
+
+.my-banner img {
+    width: 100%;
+    min-height: 25%;
+}
+
+.my-banner-centerdiv {
+    position: absolute;
+    left: 19%;
+    top: 20%;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+.my-banner-centerdiv-h1 {
+    font-size: 56px;
+    font-weight: 500;
+    text-align: left;
+    line-height: 64px;
+}
+
+.my-banner-centerdiv-p {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    line-height: 24px;
+    max-width: 540px;
+    margin-top: 67px;
+    margin-bottom: 67px;
+}
+
+.my-banner-centerdiv-div {
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    background-color: #0050ff;
+}
+
+.my-banner-centerdiv-div:hover {
+    box-shadow: 1px 1px 1px 1px #0050ff;
+}
+
+.my-banner-centerdiv-div a {
+    font-size: 12px;
+    width: auto;
+    height: auto;
+    color: #fff;
+    line-height: 30px;
+}
+
+
+.my-banner-leftarrow {
+    position: absolute;
+    top: 40%;
+    z-index: 5;
+    opacity: .3;
+    left: 1rem;
+}
+
+.my-banner-rightarrow {
+    position: absolute;
+    top: 40%;
+    z-index: 5;
+    opacity: .3;
+    right: 1rem;
+}
+
+.my-banner-leftarrow:hover,
+.my-banner-rightarrow:hover {
+    opacity: .9;
+}
+
+.my-banner-leftarrow a,
+.my-banner-rightarrow a {
+    position: relative;
+    display: block;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #f2f3f5;
+}
+
+.my-banner-leftarrow img {
+    transform: rotateY(180deg);
+}
+
+.my-banner-leftarrow a img,
+.my-banner-rightarrow a img {
+    display: block;
+    position: absolute;
+    margin: -14px -14px;
+    left: 50%;
+    top: 50%;
+    width: 28px;
+    height: 28px;
+}
