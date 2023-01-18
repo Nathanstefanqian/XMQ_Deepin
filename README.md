@@ -214,9 +214,9 @@ git branch <newBranch> 创建一个新的分支
 
 git branch -d <Branch> 删除本地分支
 
+git branch -D<Branch>强行删除本地分支（目标分支与当前分支没有合并时这样操作可以强行清除分支）
 
-
-git checkout <newBranch> 切换到新分支
+git merge <Branch> 合并Branch到当前分支
 
 git checkout -b <newBranch> 创建一个新分支并切换到新分支
 
