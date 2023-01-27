@@ -87,37 +87,43 @@
           </a>
         </li>
         <li>
-          <span><a href="#">语言：</a></span>
+          <span><a href="#">语言：<span id="flag_ins"><img src="../Deepin/image/cn.png" alt=""></span></a></span>
           <div class="header-nav-droplist">
             <ul>
-              <li><a href="#"><img src="../Deepin/image/cn.png" alt=""> 中文</a></li>
-              <li><a href="#"><img src="../Deepin/image/gb.png" alt=""> English</a></li>
+              <li id="flag_ch"><a href="#"><img src="../Deepin/image/cn.png" alt=""> 中文</a></li>
+              <li id="flag_en"><a href="#"><img src="../Deepin/image/gb.png" alt=""> English</a></li>
             </ul>
         </li>
       </nav>
     </div>
   </header>
   <div class="clearfix"></div>
-  <section class="my-banner-layout">
+  <section class="my-banner-layout" id="carousel">
     <div class="my-banner">
-      <img src="../Deepin/image/banner.jpg" alt="my-banner" />
-      <div class="my-banner-centerdiv">
+      <div class="my-banner-image" id="my_banner_image">
+        <li><img src="../Deepin/image/banner.jpg" alt="my-banner" /></li>
+        <li><img src="https://storage.deepin.org/thread/202212091135251267_20.8banner1920x7801.jpg" alt="my-banner" />
+        </li>
+        <li><img src="https://storage.deepin.org/thread/202211101009047483_%E5%AE%98%E7%BD%91banner1920x780.jpg"
+            alt="my-banner" /></li>
+      </div>
+      <div class=" my-banner-centerdiv">
         <h1 class="my-banner-centerdiv-h1">deepin 主题壁纸</h1>
         <p class="my-banner-centerdiv-p">不少小伙伴对deepin的主题壁纸钟爱有加，应大家所需，从设计大佬那搞来的福利，欢迎收藏分享。</p>
         <div href="#" class="my-banner-centerdiv-div">
           <a href="#">下载</a>
         </div>
       </div>
-      <div class="my-banner-leftarrow" id="my_banner_leftarrow">
-        <a href="#">
-          <img src="../Deepin/image/left.svg">
-        </a>
-      </div>
-      <div class="my-banner-rightarrow" id="my_banner_rightarrow">
-        <a href="#">
-          <img src="../Deepin/image/right.svg">
-        </a>
-      </div>
+    </div>
+    <div class="my-banner-leftarrow" id="my_banner_leftarrow">
+      <a href="#">
+        <img src="../Deepin/image/left.svg">
+      </a>
+    </div>
+    <div class="my-banner-rightarrow" id="my_banner_rightarrow">
+      <a href="#">
+        <img src="../Deepin/image/right.svg">
+      </a>
     </div>
   </section>
 
@@ -359,8 +365,15 @@
       <div class="my-user-title">用户推荐</div>
       <div class="my-user-subtitle">来自不同领域的用户评价</div>
       <div class="my-user-contentdiv">
-        <a href="#"><img src="../Deepin/image/right.svg" class="my-user-leftarrow"></a>
-        <div class="my-user-contentdiv-center">
+        <li id="left_arr"><img src="../Deepin/image/right.svg" class="my-user-leftarrow"></li>
+        <div class="my-user-contentdiv-center" id="user1">
+          <div>
+            <img src="https://openapi.deepin.com/bucket/avatar/b04119abb5acd67ea24be223ec2d2d7d874150fa">
+            <h1>^9星守辰^</h1>
+          </div>
+          <p>最棒的当推截图，文字识别现在这么给力，还有截图置顶，工作中方便了很多，期待资源占用能降下来，风扇越安静越好</p>
+        </div>
+        <div class="my-user-contentdiv-center" id="user2">
           <div>
             <img src="../Deepin/image/user.png">
             <h1>阿顺呀</h1>
@@ -369,7 +382,15 @@
             首先，deepin真的很棒了，从15年跟到现在，一起跟着deepin成长起来。这一路确实很多坎坎坷坷。虽然我总是说deepin很多不好，但是我是真的热爱这个系统，希望他越来越好。我每天都坚持点distrowatch，每天都会来论坛看看。每天都执行
             sudo apt update && sudo apt upgrade。</p>
         </div>
-        <a href="@"><img src="../Deepin/image/right.svg"></a>
+        <div class="my-user-contentdiv-center" id="user3">
+          <div>
+            <img
+              src="https://thirdwx.qlogo.cn/mmopen/vi_32/vmibOkjyGKIPZy3aSSTsGBy8g7KictmFNqK5lrN3ibd8UE6iczic1YyhN0Nec7KOfhEribmRBBTAAG5H7RdZ7Lztrsog/132">
+            <h1>martonyang</h1>
+          </div>
+          <p>OCR文字识别功能真的爱了，识别准确、快速</p>
+        </div>
+        <li id="right_arr"><img src="../Deepin/image/right.svg"></li>
       </div>
     </div>
   </section>
@@ -407,5 +428,10 @@
   </section>
 
 </body>
+<script src="../js/jquery.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/swiper.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/insertFlag.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/tab.js" type="text/javascript" charset="utf-8"></script>
+
 
 </html>
