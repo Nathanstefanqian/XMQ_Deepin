@@ -5,9 +5,10 @@
 .my-banner {
   position: relative;
   display: block;
-  width: 100%;
+  width: 1497px;
   height: 608px;
-
+  margin: 0 auto;
+  overflow-x: hidden;
 }
 
 
