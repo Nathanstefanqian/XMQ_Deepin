@@ -5,7 +5,9 @@ var carousel_controller_right = document.getElementById("my_banner_rightarrow");
 // 设置全局变量
 var picIndex = 0;
 var picWidth = carousel.offsetWidth;
-
+window.onresize = () => {
+  picWidth = carousel.offsetWidth;
+}
 // 拷贝第一张图片到最后
 carousel_image_container.appendChild(carousel_image_container.children[0].cloneNode(true));
 // 该方法将复制并返回调用它的节点的副本。如果传递给它的参数是 true，它还将递归复制当前节点的所有子孙节点。否则，它只复制当前节点。
