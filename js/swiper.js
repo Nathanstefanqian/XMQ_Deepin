@@ -5,6 +5,17 @@ var carousel_controller_right = document.getElementById("my_banner_rightarrow");
 // 设置全局变量
 var picIndex = 0;
 var picWidth = carousel.offsetWidth;
+var mystep = 20;
+window.onresize = () => {
+  clearInterval(timeId)
+  clearInterval(carousel_image_container.timeId)
+  //先将可能开启的定时器关闭
+  picWidth = carousel.offsetWidth;
+  //获取缩放后视窗大小
+  carousel_image_container.style.left = (-picIndex * picWidth) + "px";
+  //迅速定位到第picindex张图片的位置
+  mystep = 20 * picWidth / 1512;
+}
 
 // 拷贝第一张图片到最后
 carousel_image_container.appendChild(carousel_image_container.children[0].cloneNode(true));
@@ -46,7 +57,7 @@ function animate(element, target) {
     // 获取对象当前的位置
     var current = element.offsetLeft;
     // 每次移动多少像素
-    var step = 15;
+    var step = mystep;
     // 判断是往正方向走还是往相反方向走
     step = current < target ? step : -step;
     // 每次移动后的距离
@@ -72,5 +83,8 @@ carousel.onmouseover = function () {
 };
 // 鼠标离开开始播放
 carousel.onmouseout = function () {
-  timeId = setInterval(Event, 3000);
+  timeId = setInterval(() => {
+    Event()
+    console.log('自动播放定时器timeId还开着呢！')
+  }, 2000);
 };
